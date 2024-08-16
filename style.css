@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: o;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --clr-dark: #000000;
+  --clr-primary: #abff04;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: transparent;
+  height: 3rem;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: 0px 10px 0px 10px;
+}
+
+.navbar a:hover {
+  color: var(--clr-primary);
+}
+
+.hello {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-size-adjust: 30px;
+}
+
+.hello span {
+  color: var(--clr-primary);
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100wh;
+}
+
+.work {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_card {
+  background-color: rgb(168, 168, 168);
+  border: solid 1px gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.project_card h3 {
+  color: rgb(0, 0, 0);
+  line-height: 10px;
+}
+
+.project_card img {
+  border-radius: 5px;
+  height: 300px;
+  width: 300px;
+}
+
+.project_card svg {
+  height: 50px;
+  width: 50px;
+}
+
+.icon {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+  padding-top: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+li img {
+  margin-right: 10px;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 85vh;
+  border-radius: 3px;
+  width: 5rem;
+  top: 10vh;
+  left: 20px;
+  position: fixed;
+  background-color: rgb(26, 26, 26);
+  z-index: 1;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-nav a {
+  margin: 10px;
+}
+
+.side-nav svg:hover {
+  background-color: aliceblue;
+}
+
+.logo {
+  margin-top: 10px;
+  border: solid 3px #abff04;
+  border-radius: 3px;
+  height: 45px;
+  width: 45px;
+}
