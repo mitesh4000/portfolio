@@ -1,73 +1,92 @@
-body {
-  margin: 0;
-  padding: o;
-  width: 100%;
-  background-color: rgb(0, 0, 0);
-  font-size: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 :root {
   --clr-dark: #000000;
   --clr-primary: #abff04;
+  --clr-normal-font : #ffffff
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("./static/fonts/Teko-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-dark);
+  font-size: 25px;
+  font-family: "Teko", sans-serif;
+}
+
+a,.btn {transition: all 300ms ease;}
+
+/* NIGATION BAR */
+
+
+.navbar,.nav-links{
+  display: flex;
+}
+
+.navbar {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links{
+  gap:2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.nav-links a{
+  color: var(--clr-normal-font); 
+  text-decoration: none;
+}
+
+.nav-links a:hover{
+  color: var(--clr-primary);
+  text-decoration:underline;
+  text-underline-offset: 1rem;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav{
+  color: var(--clr-normal-font);
+  display: flex;
+}
+
+.hamburger-menu {
+  position : relative;
+  display: inline-block;
+}
+
+
+.hamburger-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
 }
 
 h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  background-color: transparent;
-  height: 3rem;
-  z-index: 1000;
-}
 
-.navbar a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  margin: 0px 10px 0px 10px;
-}
-
-.navbar a:hover {
-  color: var(--clr-primary);
-}
-
-.hello {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-size-adjust: 30px;
-}
-
-.hello span {
-  color: var(--clr-primary);
-}
-
-.welcome-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100wh;
-}
-
-.work {
-  height: 100vh;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
 
 .project_card {
   background-color: rgb(168, 168, 168);
   border: solid 1px gray;
   padding: 10px;
   border-radius: 10px;
+  height: 10vh;
+  width: 10vw;
 }
 
 .project_card h3 {

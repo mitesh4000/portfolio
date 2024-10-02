@@ -8,20 +8,39 @@
   </head>
   <body>
     <div class="navbar">
-      <div>
-        <a>about me</a>
-        <a>my work</a>
-        <a>blogs</a>
+      <div class="logo">
       </div>
-    </div>
-    <div class="welcome-section">
-      <div class="hello">
-        <p>Hello, I'm <span>Mitesh</span></p>
-        <p>Let's cut down the nonsense, drag down to see my work</p>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a  href="#experiance">experiance</a></li>
+          <li><a  href="#projects">projects</a></li>
+          <li><a  href="#contact">contact</a></li>
+        </ul>
       </div>
     </div>
 
-    <div class="side-nav">
+    <nav id="hamburger-nav">
+      <div class="hamburger-logo">
+        hay man
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="tooggleManu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="tooggleManu()">about</a></li>
+          <li><a  href="#experiance" onclick="tooggleManu()">experiance</a></li>
+          <li><a  href="#projects" onclick="tooggleManu()">projects</a></li>
+          <li><a  href="#contact" onclick="tooggleManu()" >contact</a></li>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- <div class="side-nav">
       <div class="logo"></div>
       <div class="socials">
         <a href="">
@@ -116,6 +135,9 @@
           </svg>
         </a>
       </div>
-    </div>
+      <div class="project-card">
+
+      </div>
+    </div> -->
   </body>
 </html>
