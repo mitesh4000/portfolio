@@ -1,8 +1,9 @@
-@media screen and (max-width:1200px){
+@media screen and (max-width:600px){
     #navbar{
         display: none;
     }
     #hamburger-nav{
-        
+        display: flex;
+        justify-content: space-between;
     }
 }
