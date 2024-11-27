@@ -1,325 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="whats up motherfucker you are looking at gods creation">
-    <meta name="author" content="Devcrud">
-    <title>Mitehs Maurya</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
-	<link rel="stylesheet" href="assets/css/johndoe.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitesh Maurya - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#84cc16', // lime-500
+                        secondary: '#1e293b', // slate-800
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
-    <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-            </ul>  
-            <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title">Mitesh Maurya</h1>
-                <h6 class="header-mono" >Fullstack web developer</h6>
-                <a class="btn btn-outline-primary btn-rounded" href="./assets/resume.pdf" target="_blank"><i class="ti-printer pr-2"></i>Print Resume</a>
-            </div>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-primary text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Mitesh Maurya</h1>
+            <nav class="flex items-center space-x-4">
+                <a href="https://github.com/mitesh4000" target="_blank" class="hover:text-secondary">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="https://x.com/Mitesh4000" target="_blank" class="hover:text-secondary">
+                    <i data-lucide="twitter" class="w-5 h-5"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mitesh-maurya-38244719a/" target="_blank" class="hover:text-secondary">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="mailto:mitesh96625@gmail.com" class="hover:text-secondary">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+            </nav>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
-                </ul>
-                
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+
+    <main class="container mx-auto mt-8 p-4">
+        <section class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">Full Stack Developer</h2>
+            <p class="text-xl mb-6">Passionate about building scalable web applications with modern technologies. Experienced in MERN stack and cloud services.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="mailto:mitesh96625@gmail.com" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-80">Contact Me</a>
+                <a href="tel:8780007586" class="bg-secondary text-white px-6 py-2 rounded-full hover:bg-opacity-80">Call Me</a>
             </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">a curious web developer looking for new challanges</h5>
-                <p class="mt-20">I’m a software developer with experience in web development and project management. I improved data processing efficiency by 20% while migrating projects to the MERN stack. I specialize in JavaScript, Node.js, and RESTful APIs, and I enjoy collaborating with teams to deliver high-quality solutions.</p>                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Email</span> : mitesh96625@gmail.com</li>
-                    <li><span>Phone</span> : 8780007586</li>
-                    <li><span>Address</span> :  Vadodra|Gujrat|India</li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link " href="#"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Expertise</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Prompt engineering</h6>
-                        <p class="subtitle"> exercitat Repellendus,  corrupt.</p>
-                        <hr>
+        </section>
+
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold mb-4 text-primary">Skills</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="font-bold mb-2">Languages</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-primary text-white px-2 py-1 rounded-full text-sm">TypeScript</span>
+                        <span class="bg-primary text-white px-2 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-primary text-white px-2 py-1 rounded-full text-sm">Golang</span>
+                        <span class="bg-primary text-white px-2 py-1 rounded-full text-sm">Python</span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Web Development</h6>
-                        <p class="subtitle">Lorem ipsum dolor sit consectetur.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Digital Marketing</h6>
-                        <p class="subtitle">voluptate commodi illo voluptatib.</p>
-                        <hr>
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="font-bold mb-2">Technologies</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-secondary text-white px-2 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-secondary text-white px-2 py-1 rounded-full text-sm">Angular</span>
+                        <span class="bg-secondary text-white px-2 py-1 rounded-full text-sm">Next.js</span>
+                        <span class="bg-secondary text-white px-2 py-1 rounded-full text-sm">Node.js</span>
+                        <span class="bg-secondary text-white px-2 py-1 rounded-full text-sm">TailwindCSS</span>
+                        <span class="bg-secondary text-white px-2 py-1 rounded-full text-sm">AWS</span>
+                        <span class="bg-secondary text-white px-2 py-1 rounded-full text-sm">Docker</span>
+                        <span class="bg-secondary text-white px-2 py-1 rounded-full text-sm">MongoDB</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!--Resume Section-->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Expertise</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>UX Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Front-end Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>UX Designer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                        </div>
-                    </div>
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold mb-4 text-primary">Experience</h3>
+            <div class="space-y-6">
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="font-bold">MERN Stack Developer at Barodaweb</h4>
+                    <p class="text-sm text-gray-600 mb-2">April 2023 – May 2024 | Vadodara</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Built and deployed backend architecture for two e-commerce platforms using Node.js and Express.js, handling complex features for inventory management, offers, and campaigns.</li>
+                        <li>Implemented real-time notifications for low-stock and new order alerts using websockets, improving inventory management efficiency.</li>
+                        <li>Developed and deployed multiple dynamic websites with React, integrating CMS for easy customization and content management.</li>
+                        <li>Successfully gathered requirements from and delivered projects to 5+ clients, maintaining timelines and ensuring client satisfaction.</li>
+                        <li>Collaborated with a diverse team of SEO executives, front-end developers, and web designers to create comprehensive web solutions.</li>
+                        <li>Wrote a script to migrate data from SQL to MongoDB, used in converting 3 ASP.NET projects to MERN stack, resulting in a 30% reduction in data processing time.</li>
+                    </ul>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Education</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>B.E Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.</P>
-                            <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Diploma in Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, id officiis quas placeat quia voluptas dolorum rem animi nostrum quae.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div>
-                                <span class="badge badge-success">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-nodejs">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M9 9v8.044a2 2 0 0 1 -2.996 1.734l-1.568 -.9a3 3 0 0 1 -1.436 -2.561v-6.635a3 3 0 0 1 1.436 -2.56l6 -3.667a3 3 0 0 1 3.128 0l6 3.667a3 3 0 0 1 1.436 2.561v6.634a3 3 0 0 1 -1.436 2.56l-6 3.667a3 3 0 0 1 -3.128 0" />
-                                        <path d="M17 9h-3.5a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3h-3.5" />
-                                      </svg>
-                                    
-                                    Node.js</span>
-                                <span class="badge badge-info">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-react">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" />
-                                        <path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" />
-                                        <path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" />
-                                        <path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" />
-                                        <path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" />
-                                        <path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" />
-                                        <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" />
-                                      </svg>
-                                    React.js</span>
-                                 <span class="badge badge-dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-nextjs">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993" />
-                                        <path d="M15 12v-3" />
-                                      </svg>
-                                    Next.js</span>
-                                
-    
-                            </div>
-                        </div>
-                    
-                        
-                     </div>
-                  </div>
-                    </div>
-                    
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="font-bold">Jr. Backend Developer at Amitaujas LLP</h4>
+                    <p class="text-sm text-gray-600 mb-2">March 2022 – April 2023 | Vadodara</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Developed, tested, and deployed REST APIs for an HR Management System, which included designing a robust SQL database.</li>
+                        <li>Implemented key features including Payroll Management, Loan Processing, Leave Requests and Approvals, enhancing the overall functionality of the HR system.</li>
+                        <li>Gained hands-on experience in Node.js and JavaScript programming, as well as in the system design of large-scale web applications.</li>
+                        <li>Focused on optimizing SQL database performance to ensure efficient data retrieval and storage, improving system responsiveness.</li>
+                        <li>Developed a task management system with advanced features such as role-based access control, task assignment, and approval hierarchy, gaining significant experience in project management and team collaboration.</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> projects</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Ullam</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold mb-4 text-primary">Projects</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="font-bold mb-2">Restaurant Management System</h4>
+                    <p class="text-sm text-gray-600 mb-2">Angular, Node.js, Express, MongoDB</p>
+                    <ul class="list-disc list-inside text-sm space-y-1">
+                        <li>Developed a full-stack Order Management System from the ground up</li>
+                        <li>Integrated user authentication for role-based access control</li>
+                        <li>Designed a responsive UI for optimal performance on various devices</li>
+                        <li>Implemented features to place orders by table number and generate invoices</li>
+                        <li>Created visualizations for monthly business analytics</li>
+                    </ul>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Asperiores</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="font-bold mb-2">Fair Price</h4>
+                    <p class="text-sm text-gray-600 mb-2">Node.js, Express, MongoDB</p>
+                    <ul class="list-disc list-inside text-sm space-y-1">
+                        <li>Developed an API for e-commerce websites to adjust pricing based on location buying power</li>
+                        <li>Implemented algorithms to determine buying power and manage profit margins</li>
+                        <li>Designed to help maximize sales and ensure offerings are accessible to a wider audience</li>
+                        <li>Overcame challenges in accurately determining buying power and maintaining profitability</li>
+                    </ul>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-package text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Tempora</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Provident</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-support text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="font-bold mb-2">Anon Reviews</h4>
+                    <p class="text-sm text-gray-600 mb-2">Go, SQLite, React.js</p>
+                    <ul class="list-disc list-inside text-sm space-y-1">
+                        <li>Created a platform for gathering honest, anonymous reviews</li>
+                        <li>Implemented a form creation system for customizable feedback collection</li>
+                        <li>Developed a user dashboard to display and manage collected reviews</li>
+                        <li>Addressed security concerns and implemented measures to prevent DDoS attacks</li>
+                        <li>Designed the system to be used by students, clients, and employees for candid feedback</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-
-
-
-
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-center text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created By <span class="text-danger" title="Bootstrap 4 Themes and Dashboards">mitesh</span> 
-            </p>
+    <footer class="bg-secondary text-white p-4 mt-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <p>&copy; 2024 Mitesh Maurya. All rights reserved.</p>
+            <nav class="flex items-center space-x-4">
+                <a href="https://github.com/mitesh4000" target="_blank" class="hover:text-primary">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="https://x.com/Mitesh4000" target="_blank" class="hover:text-primary">
+                    <i data-lucide="twitter" class="w-5 h-5"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mitesh-maurya-38244719a/" target="_blank" class="hover:text-primary">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="mailto:mitesh96625@gmail.com" class="hover:text-primary">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+            </nav>
         </div>
     </footer>
 
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
-
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
