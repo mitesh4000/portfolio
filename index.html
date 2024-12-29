@@ -49,28 +49,15 @@
     <main class="container mx-auto p-4">
       <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
         <div
+          id="socials"
           className="flex flex-col space-y-2 bg-white p-2 rounded-l-lg shadow-lg"
         >
           <a
-            href="https://twitter.com"
+            href="${social.redirect_link}"
             target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-blue-500 transition-colors duration-200"
-            aria-label="Visit our  page"
+            class="hover:text-secondary"
           >
-            t
-            <!-- <Icon className="w-6 h-6" /> -->
-          </a>
-
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-blue-500 transition-colors duration-200"
-            aria-label="Visit our  page"
-          >
-            t
-            <!-- <Icon className="w-6 h-6" /> -->
+            <i class="fas fa-spinner loader fa-spin"></i>
           </a>
         </div>
       </div>
@@ -97,8 +84,26 @@
 
     <footer class="bg-secondary text-white p-4 mt-12"></footer>
 
-    <script>
-      lucide.createIcons();
+    <script type="module">
+      import PocketBase from "https://unpkg.com/pocketbase@latest";
+
+      const pb = new PocketBase("https://pb.mitesh4000.in");
+      async function fetchSocials() {
+        const socials = await pb
+          .collection("portfolio_content")
+          .getList(1, 50, { filter: 'type="socials"' });
+        let socialIcons = socials.items
+          .map((social) => {
+            return `<a href="${social.redirect_link}" target="_blank" class="hover:text-secondary">
+                    <i class="${social.slug} text-xl w-12 h-12"></i>
+                </a>`;
+          })
+          .join("");
+        let socialsSection = document.getElementById("socials");
+        socialsSection.innerHTML = socialIcons;
+        console.log(socialsSection);
+      }
+      fetchSocials();
     </script>
   </body>
 </html>
