@@ -45,14 +45,27 @@
           </button>
         </div>
         <form id="toDoForm" class="mt-4 flex-col hidden space-y-2">
+          <div
+            id="taskErrorContainer"
+            class="space-y-2 bg-red-50 p-1 hidden rounded"
+          >
+            <p id="taskError" class="text-red-500 text-xs">
+              task and due required
+            </p>
+          </div>
+
           <input
+            id="task"
             type="text"
+            value="somthing"
             placeholder="Add a task"
             class="border font-abel h-8 border-gray-400 p-2 rounded w-full"
           />
           <div class="flex justify-start space-x-2">
             <input
+              id="due"
               type="datetime-local"
+              value="2023-01-01T00:00:00"
               placeholder="select due date"
               class="border text-center font-abel h-8 border-gray-400 rounded w-full"
             />
@@ -76,10 +89,18 @@
 
       const pb = new PocketBase("https://pb.mitesh4000.in");
       let addToDoButton = document.getElementById("addTodo");
-
       let addToDoForm = document.getElementById("toDoForm");
+      let taskInput = document.getElementById("task");
+      let dueInput = document.getElementById("due");
+
       let addToDoFormVisibility = false;
-      addToDoForm.addEventListener("submit", createToDo);
+      addToDoForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        createToDo({
+          task: taskInput.value,
+          due: dueInput.value,
+        });
+      });
 
       addToDoButton.addEventListener("click", () => {
         if (!addToDoFormVisibility) {
@@ -142,16 +163,28 @@
           console.error("Error fetching to-do list:", error);
         }
       }
+      function resetForm() {
+        taskInput.value = "";
+        dueInput.value = "";
+        addToDoFormVisibility = !addToDoFormVisibility;
+      }
 
-      async function createToDo() {
+      const taskError = document.getElementById("taskErrorContainer");
+      function showValidationError(show) {
+        taskError.classList.toggle("hidden", !show);
+      }
+      async function createToDo(data) {
         try {
+          showValidationError(false);
+          if (!data.task || !data.due) {
+            showValidationError(true);
+            throw new Error("Task and due required");
+          }
+
           console.log("called");
-          const data = {
-            task: "Learn Tailwind CSS",
-            status: "pending",
-          };
           const record = await pb.collection("to_do").create(data);
           console.log("Record created:", record);
+          resetForm();
           fetchToDoList();
         } catch (error) {
           console.error("Error creating to-do:", error);
