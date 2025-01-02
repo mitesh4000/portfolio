@@ -4,5 +4,24 @@
   },
   "dependencies": {
     "pocketbase": "^0.24.0"
-  }
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss build assets/css/input.css -o assets/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitesh4000/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitesh4000/portfolio/issues"
+  },
+  "homepage": "https://github.com/mitesh4000/portfolio#readme",
+  "description": ""
 }
