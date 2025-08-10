@@ -1,113 +1,139 @@
-/* styles.css */
 @font-face {
-  font-family: "Abel";
-  src: url("../fonts/Abel/Abel-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Sora';
+    src: url('../fonts/Sora/Sora-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Saira Condensed";
-  src: url("../fonts/Saira_Condensed/SairaCondensed-Thin.ttf ")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Indie Flower';
+    src: url('../fonts/IndieFlower-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Saira Condensed";
-  src: url("../fonts/Saira_Condensed/SairaCondensed-ExtraLight.ttf")
-    format("truetype");
-  font-weight: 200;
-  font-style: normal;
+    font-family: 'Squada One';
+    src: url('../fonts/Squada_One/SquadaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Saira Condensed";
-  src: url("../fonts/Saira_Condensed/SairaCondensed-Light.ttf")
-    format("truetype");
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'Teko';
+    src: url('../fonts/Teko/Teko-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Saira Condensed";
-  src: url("../fonts/Saira_Condensed/SairaCondensed-Regular.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Teko';
+    src: url('../fonts/Teko/static/Teko-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Saira Condensed";
-  src: url("../fonts/Saira_Condensed/SairaCondensed-Medium.ttf")
-    format("truetype");
-  font-weight: 500;
-  font-style: normal;
+    font-family: 'Teko';
+    src: url('../fonts/Teko/static/Teko-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Saira Condensed";
-  src: url("../fonts/Saira_Condensed/SairaCondensed-SemiBold.ttf")
-    format("truetype");
-  font-weight: 600;
-  font-style: normal;
+    font-family: 'Teko';
+    src: url('../fonts/Teko/static/Teko-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Saira Condensed";
-  src: url("../fonts/Saira_Condensed/SairaCondensed-Bold.ttf")
-    format("truetype");
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Teko';
+    src: url('../fonts/Teko/static/Teko-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Saira Condensed";
-  src: url("../fonts/Saira_Condensed/SairaCondensed-ExtraBold.ttf")
-    format("truetype");
-  font-weight: 800;
-  font-style: normal;
+    font-family: 'Teko';
+    src: url('../fonts/Teko/static/Teko-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Saira Condensed";
-  src: url("../fonts/Saira_Condensed/SairaCondensed-Black.ttf")
-    format("truetype");
-  font-weight: 900;
-  font-style: normal;
+    font-family: 'Abel';
+    src: url('../fonts/Abel/Abel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Squada One";
-  src: url("../fonts/Squada_One/SquadaOne-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed/SairaCondensed-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Teko";
-  src: url("../fonts/Teko/Teko-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed/SairaCondensed-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Mynerve";
-  src: url("../fonts/Mynerve-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed/SairaCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Indie Flower";
-  src: url("../fonts/IndieFlower-Regular.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed/SairaCondensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
-.abel-regular {
-  font-family: "Abel", serif;
-  font-weight: 400;
-  font-style: normal;
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed/SairaCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed/SairaCondensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed/SairaCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed/SairaCondensed-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed/SairaCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mynerve';
+    src: url('../fonts/Mynerve-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

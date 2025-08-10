@@ -2,462 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Mitesh Maurya - Full Stack Developer</title>
+    <title>Font Preview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="./assets/css/fonts.css" rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
-    <link rel="stylesheet" href="./assets/css/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Gemunu+Libre:wght@200..800&family=Gloria+Hallelujah&family=Indie+Flower&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Squada+One&family=Teko:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- <link
-      rel="stylesheet"
-      href="assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css"
-    /> -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-
-    <script src="https://unpkg.com/lucide@latest"></script>
-  </head>
-  <body class="bg-gray-100 text-gray-800 font-abel">
-    <!-- <header class="bg-primary text-white p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Mitesh Maurya</h1>
-            <nav class="flex items-center space-x-4">
-                <a href="https://github.com/mitesh4000" target="_blank" class="hover:text-secondary">
-                    <i data-lucide="github" class="w-5 h-5"></i>
-                </a>
-                <a href="https://x.com/Mitesh4000" target="_blank" class="hover:text-secondary">
-                    <i data-lucide="twitter" class="w-5 h-5"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mitesh-maurya-38244719a/" target="_blank" class="hover:text-secondary">
-                    <i data-lucide="linkedin" class="w-5 h-5"></i>
-                </a>
-                <a href="mailto:mitesh96625@gmail.com" class="hover:text-secondary">
-                    <i data-lucide="mail" class="w-5 h-5"></i>
-                </a>
-            </nav>
-        </div>
-    </header> -->
-
-    <main class="container mx-auto p-4">
-      <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50 ">
-        <div
-          id="socials"
-          className="flex flex-col space-y-2 bg-white p-2 rounded-l-lg shadow-lg"
-        >
-          <a href="#" target="_blank" class="hover:text-secondary">
-            <i class="fas fa-spinner loader fa-spin"></i>
-          </a>
-        </div>
-      </div>
-
-      <section
-        class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[url('./assets/imgs/bg_main.png')] bg-cover bg-center"
-      >
-        <div class="text-center">
-          <p class="font-indie-flower text-2xl">
-            The more
-            <strong class="text-lime-500">time </strong>
-            you spend on something, the better you get
-          </p>
-          <p class="font-abel text-2xl">
-            I'm
-            <strong class="font-teko text-6xl">mitesh maurya</strong>
-            and I've spent a lot of
-            <strong class="text-lime-500">time </strong>
-            in tech and plan to spend more.
-          </p>
-        </div>
-      </section>
-      <!-- <section class="container mx-auto px-8 py-8">
-        <div class="text-center">
-          <div
-            class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0"
-          >
-            <h1 class="text-3xl font-bold font-indie-flower text-gray-800">
-              Things I've Spent My
-              <strong class="text-lime-500">Time</strong> On
-            </h1>
-          </div>
-
-          <div class="project-highlights mt-8 grid md:grid-cols-3 gap-4">
-            <div
-              class="w-full max-w-md overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 bg-white rounded-lg shadow-md"
-            >
-              <div class="bg-gray-800 text-white p-4">
-                <h2 class="text-2xl font-squada-one">Wall of Memories</h2>
-              </div>
-
-              <div class="p-6">
-                <p class="text-gray-600 text-md mb-6">
-                  Imagine a digital gallery where you can store, share, and
-                  relive memories with others!
-                </p>
-
-                <div class="flex justify-between items-center mb-6">
-                  <a
-                    href="#"
-                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="mr-2"
-                    >
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                      ></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" x2="21" y1="14" y2="3"></line>
-                    </svg>
-                    <span class="underline">Live Demo</span>
-                  </a>
-
-                  <a
-                    href="#"
-                    class="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="mr-2"
-                    >
-                      <path
-                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.28 1.15-.28 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-                      ></path>
-                      <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                    </svg>
-                    <span class="underline">Source Code</span>
-                  </a>
-                </div>
-
-                <div>
-                  <h4 class="text-sm font-semibold text-gray-700 mb-2">
-                    Made with:
-                  </h4>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >golang</span
-                    >
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >temple</span
-                    >
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >htmlx</span
-                    >
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >pocketbase</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="w-full max-w-md overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 bg-white rounded-lg shadow-md"
-            >
-              <div class="bg-gray-800 text-white p-4">
-                <h2 class="text-2xl font-squada-one">safe cretique</h2>
-              </div>
-
-              <div class="p-6">
-                <p class="text-gray-600 text-md mb-6">
-                  so you want honest opinoion from you clients and friends? this
-                  is for you
-                </p>
-
-                <div class="flex justify-between items-center mb-6">
-                  <a
-                    href="#"
-                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="mr-2"
-                    >
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                      ></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" x2="21" y1="14" y2="3"></line>
-                    </svg>
-                    <span class="underline">Live Demo</span>
-                  </a>
-
-                  <a
-                    href="#"
-                    class="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="mr-2"
-                    >
-                      <path
-                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.28 1.15-.28 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-                      ></path>
-                      <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                    </svg>
-                    <span class="underline">Source Code</span>
-                  </a>
-                </div>
-
-                <div>
-                  <h4 class="text-sm font-semibold text-gray-700 mb-2">
-                    Made with:
-                  </h4>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >golang</span
-                    >
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >temple</span
-                    >
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >htmlx</span
-                    >
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >pocketbase</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="w-full max-w-md overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 bg-white rounded-lg shadow-md"
-            >
-              <div class="bg-gray-800 text-white p-4">
-                <h2 class="text-2xl font-squada-one">
-                  Invade (multiplayer game)
-                </h2>
-              </div>
-
-              <div class="p-6">
-                <p class="text-gray-600 text-md mb-6">
-                  a 2D online multiplayer battle arena where players command
-                  customizable tanks in strategic team-based combat.
-                </p>
-
-                <div class="flex justify-between items-center mb-6">
-                  <a
-                    href="#"
-                    class="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200"
-                    target="_blank"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="mr-2"
-                    >
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                      ></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" x2="21" y1="14" y2="3"></line>
-                    </svg>
-                    <span class="underline">Live Demo</span>
-                  </a>
-
-                  <a
-                    href="https://github.com/mitesh4000/invade/tree/main/server"
-                    class="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                    target="_blank"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="mr-2"
-                    >
-                      <path
-                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.28 1.15-.28 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-                      ></path>
-                      <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                    </svg>
-                    <span class="underline">Source Code</span>
-                  </a>
-                </div>
-
-                <div>
-                  <h4 class="text-sm font-semibold text-gray-700 mb-2">
-                    Made with:
-                  </h4>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >Node.js</span
-                    >
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >HTML</span
-                    >
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >tailwind</span
-                    >
-                    <span
-                      class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm"
-                      >typescript</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div class="max-w-7xl mx-auto">
-          <h2
-            class="text-3xl font-extrabold text-custom-gray text-center mb-12"
-          >
-            My Services
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            Service 1 
-            <div
-              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-            >
-              <div class="p-1 bg-custom-lime"></div>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-custom-gray mb-4">
-                  Web Development
-                </h3>
-                <p class="text-gray-600 mb-4">
-                  Custom website development tailored to your specific needs and
-                  goals.
-                </p>
-                <a
-                  href="#"
-                  class="text-custom-lime hover:text-custom-gray transition-colors duration-300"
-                  >Learn More &rarr;</a
-                >
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-            >
-              <div class="p-1 bg-custom-lime"></div>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-custom-gray mb-4">
-                  UI/UX Design
-                </h3>
-                <p class="text-gray-600 mb-4">
-                  Creating intuitive and visually appealing user interfaces for
-                  web and mobile applications.
-                </p>
-                <a
-                  href="#"
-                  class="text-custom-lime hover:text-custom-gray transition-colors duration-300"
-                  >Learn More &rarr;</a
-                >
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
-            >
-              <div class="p-1 bg-custom-lime"></div>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-custom-gray mb-4">
-                  Mobile App Development
-                </h3>
-                <p class="text-gray-600 mb-4">
-                  Building responsive and feature-rich mobile applications for
-                  iOS and Android platforms.
-                </p>
-                <a
-                  href="#"
-                  class="text-custom-lime hover:text-custom-gray transition-colors duration-300"
-                  >Learn More &rarr;</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-    </main>
-
-    <footer class="bg-secondary text-white p-4 mt-12"></footer>
-
-    <script type="module">
-      import PocketBase from "https://unpkg.com/pocketbase@latest";
-
-      const pb = new PocketBase("https://pb.mitesh4000.in");
-      async function fetchSocials() {
-        const socials = await pb
-          .collection("portfolio_content")
-          .getList(1, 50, { filter: 'type="socials"' });
-        let socialIcons = socials.items
-          .map((social) => {
-            return `<a href="${social.redirect_link}" target="_blank" class="hover:text-secondary">
-                    <i class="${social.slug} text-xl w-12 h-12"></i>
-                </a>`;
-          })
-          .join("");
-        let socialsSection = document.getElementById("socials");
-        socialsSection.innerHTML = socialIcons;
-        // console.log(socialsSection);
+    <style>
+      body {
+        font-family: "Sora", sans-serif;
       }
-      fetchSocials();
-    </script>
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <section
+      class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[url('./assets/imgs/bg_main.png')] bg-cover bg-center"
+    >
+      <div class="text-center">
+        <p class="font-sans text-3xl">
+          Hi, I'm
+          <strong class="text-6xl font-bold">Mitesh Maurya</strong>
+        </p>
+        <p class="text-3xl mt-4">
+          A programmer by profession, engineer at heart.
+        </p>
+        <p class="font-sans text-3xl mt-4">
+          I build
+          <a
+            href="#"
+            class="relative text-4xl font-bold text-lime-500 hover:text-lime-600 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:bg-current after:w-0 hover:after:w-full after:transition-all after:duration-300"
+          >
+            cool stuff
+          </a>
+          and read interesting things.
+        </p>
+        <p class="font-sans text-3xl mt-4">
+          Find me on
+          <a
+            href="https://github.com/mitesh4000"
+            target="_blank"
+            class="relative text-3xl font-bold text-lime-500 hover:text-lime-600 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:bg-current after:w-0 hover:after:w-full after:transition-all after:duration-300"
+          >
+            GitHub </a
+          >,
+          <a
+            href="https://x.com/yourhandle"
+            target="_blank"
+            class="relative text-3xl font-bold text-lime-500 hover:text-lime-600 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:bg-current after:w-0 hover:after:w-full after:transition-all after:duration-300"
+          >
+            X</a
+          >
+          , and
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            class="relative text-3xl font-bold text-lime-500 hover:text-lime-600 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:bg-current after:w-0 hover:after:w-full after:transition-all after:duration-300"
+          >
+            LinkedIn </a
+          >.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
